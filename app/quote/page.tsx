@@ -12,9 +12,7 @@ const quoteSchema = z.object({
   services: z.array(z.string()).min(1, "Please select at least one service"),
 
   // Property Details
-  propertyType: z.enum(["residential", "commercial"], {
-    errorMap: () => ({ message: "Please select property type" }),
-  }),
+  propertyType: z.enum(["residential", "commercial"]),
   propertyAddress: z.string().min(5, "Please enter a valid address"),
   propertySize: z.string().optional(),
 
