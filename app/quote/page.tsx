@@ -377,6 +377,7 @@ export default function QuotePage() {
                     <input
                       type="date"
                       {...register("preferredDate")}
+                      min={new Date().toISOString().split("T")[0]}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900"
                     />
                   </div>
