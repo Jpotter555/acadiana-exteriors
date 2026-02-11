@@ -40,6 +40,7 @@ export default function QuotePage() {
   const [step, setStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [canSubmit, setCanSubmit] = useState(false);
 
   const {
     register,
@@ -62,15 +63,33 @@ export default function QuotePage() {
     if (step === 3) fieldsToValidate = ["fullName", "email", "phone"];
 
     const isValid = await trigger(fieldsToValidate);
-    if (isValid) setStep(step + 1);
+    if (isValid) {
+      setStep(step + 1);
+
+      // If moving to step 4, prevent immediate submission
+      if (step === 3) {
+        setCanSubmit(false);
+        // Allow submission after 300ms to prevent click event carryover
+        setTimeout(() => setCanSubmit(true), 300);
+      }
+    }
   };
 
-  const prevStep = () => setStep(step - 1);
+  const prevStep = () => {
+    setStep(step - 1);
+    setCanSubmit(false); // Reset canSubmit when going back
+  };
 
   const onSubmit = async (data: QuoteFormData) => {
     // Prevent submission if not on step 4
     if (step !== 4) {
       console.log("Form submission prevented - not on step 4");
+      return;
+    }
+
+    // Prevent submission if we just reached step 4 (click event carryover protection)
+    if (!canSubmit) {
+      console.log("Form submission prevented - just reached step 4, please click submit again");
       return;
     }
 
