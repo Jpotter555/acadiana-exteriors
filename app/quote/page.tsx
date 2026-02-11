@@ -209,7 +209,7 @@ export default function QuotePage() {
                           {...register("propertyType")}
                           className="w-5 h-5 text-primary"
                         />
-                        <span className="ml-3 font-medium">Residential</span>
+                        <span className="ml-3 font-medium text-gray-900">Residential</span>
                       </label>
                       <label className="flex items-center p-4 border-2 rounded-lg cursor-pointer hover:border-primary transition">
                         <input
@@ -218,7 +218,7 @@ export default function QuotePage() {
                           {...register("propertyType")}
                           className="w-5 h-5 text-primary"
                         />
-                        <span className="ml-3 font-medium">Commercial</span>
+                        <span className="ml-3 font-medium text-gray-900">Commercial</span>
                       </label>
                     </div>
                     {errors.propertyType && (
@@ -236,7 +236,7 @@ export default function QuotePage() {
                       type="text"
                       {...register("propertyAddress")}
                       placeholder="123 Main St, Lafayette, LA"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900 placeholder:text-gray-500"
                     />
                     {errors.propertyAddress && (
                       <p className="mt-1 text-sm text-red-600">
@@ -253,7 +253,7 @@ export default function QuotePage() {
                       type="text"
                       {...register("propertySize")}
                       placeholder="e.g., 2000 sq ft, 1 acre"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900 placeholder:text-gray-500"
                     />
                   </div>
                 </div>
@@ -277,7 +277,7 @@ export default function QuotePage() {
                       type="text"
                       {...register("fullName")}
                       placeholder="John Doe"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900 placeholder:text-gray-500"
                     />
                     {errors.fullName && (
                       <p className="mt-1 text-sm text-red-600">{errors.fullName.message}</p>
@@ -292,7 +292,7 @@ export default function QuotePage() {
                       type="email"
                       {...register("email")}
                       placeholder="john@example.com"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900 placeholder:text-gray-500"
                     />
                     {errors.email && (
                       <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
@@ -307,7 +307,7 @@ export default function QuotePage() {
                       type="tel"
                       {...register("phone")}
                       placeholder="(337) 555-0123"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900 placeholder:text-gray-500"
                     />
                     {errors.phone && (
                       <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>
@@ -333,7 +333,7 @@ export default function QuotePage() {
                     <input
                       type="date"
                       {...register("preferredDate")}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900"
                     />
                   </div>
 
@@ -345,7 +345,7 @@ export default function QuotePage() {
                       {...register("message")}
                       rows={4}
                       placeholder="Any special requirements, concerns, or questions?"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-none text-gray-900 placeholder:text-gray-500"
                     />
                   </div>
                 </div>
