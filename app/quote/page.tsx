@@ -68,6 +68,12 @@ export default function QuotePage() {
   const prevStep = () => setStep(step - 1);
 
   const onSubmit = async (data: QuoteFormData) => {
+    // Prevent submission if not on step 4
+    if (step !== 4) {
+      console.log("Form submission prevented - not on step 4");
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -146,7 +152,15 @@ export default function QuotePage() {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            onKeyDown={(e) => {
+              // Prevent Enter key from submitting form until step 4
+              if (e.key === "Enter" && step !== 4) {
+                e.preventDefault();
+              }
+            }}
+          >
             {/* Step 1: Services */}
             {step === 1 && (
               <div>
