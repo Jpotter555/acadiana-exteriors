@@ -31,6 +31,26 @@ export async function POST(request: Request) {
       from: "Acadiana Exteriors <quotes@acadianaexteriors.com>",
       to: process.env.RESEND_TO_EMAIL || "jonathan@acadianaexteriors.com",
       subject: `New Quote Request from ${fullName}`,
+      text: `
+NEW QUOTE REQUEST
+
+Customer Information:
+- Name: ${fullName}
+- Email: ${email}
+- Phone: ${phone}
+
+Service Details:
+- Services: ${servicesList}
+- Property Type: ${propertyType.charAt(0).toUpperCase() + propertyType.slice(1)}
+- Address: ${propertyAddress}
+${propertySize ? `- Property Size: ${propertySize}` : ""}
+${preferredDate ? `- Preferred Date: ${new Date(preferredDate).toLocaleDateString()}` : ""}
+${message ? `- Message: ${message}` : ""}
+
+Action Required: Contact this customer within 24 hours to provide a quote and schedule the service.
+
+This quote request was submitted via acadianaexteriors.com
+      `,
       html: `
         <!DOCTYPE html>
         <html>
@@ -113,6 +133,28 @@ export async function POST(request: Request) {
       from: "Acadiana Exteriors <quotes@acadianaexteriors.com>",
       to: email,
       subject: "We Received Your Quote Request!",
+      text: `
+Thank You, ${fullName}!
+
+We've received your quote request for:
+
+Services Requested: ${servicesList}
+Property: ${propertyAddress}
+
+What Happens Next?
+1. We'll review your request and property details
+2. One of our team members will contact you within 24 hours
+3. We'll provide a detailed, no-obligation quote
+4. If you're happy with the quote, we'll schedule your service!
+
+Questions? Reply to this email or call us directly. We're here to help!
+
+---
+Acadiana Exteriors
+Professional Pressure Washing & Exterior Maintenance
+Serving Acadiana, Louisiana
+acadianaexteriors.com
+      `,
       html: `
         <!DOCTYPE html>
         <html>
