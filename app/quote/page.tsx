@@ -74,6 +74,7 @@ export default function QuotePage() {
       return;
     }
 
+    console.log("Submitting quote request...", data);
     setIsSubmitting(true);
 
     try {
@@ -83,7 +84,16 @@ export default function QuotePage() {
         body: JSON.stringify(data),
       });
 
-      if (!response.ok) throw new Error("Failed to submit quote");
+      console.log("API response status:", response.status);
+
+      if (!response.ok) {
+        const errorData = await response.text();
+        console.error("API error:", errorData);
+        throw new Error("Failed to submit quote");
+      }
+
+      const result = await response.json();
+      console.log("Quote submitted successfully:", result);
 
       setIsSuccess(true);
     } catch (error) {
@@ -155,8 +165,9 @@ export default function QuotePage() {
           <form
             onSubmit={handleSubmit(onSubmit)}
             onKeyDown={(e) => {
-              // Prevent Enter key from submitting form until step 4
-              if (e.key === "Enter" && step !== 4) {
+              // Prevent Enter key from ever submitting the form
+              // Only allow submission via explicit button click
+              if (e.key === "Enter") {
                 e.preventDefault();
               }
             }}

@@ -5,7 +5,9 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
+    console.log("Quote API called");
     const data = await request.json();
+    console.log("Quote data received:", JSON.stringify(data, null, 2));
 
     const {
       services,
@@ -164,17 +166,33 @@ export async function POST(request: Request) {
       `,
     });
 
-    console.log("Admin email sent:", adminEmail);
-    console.log("Customer email sent:", customerEmail);
+    console.log("Admin email sent:", JSON.stringify(adminEmail, null, 2));
+    console.log("Customer email sent:", JSON.stringify(customerEmail, null, 2));
+
+    // Check if emails were sent successfully
+    if (adminEmail.error || customerEmail.error) {
+      console.error("Email sending errors:", {
+        adminError: adminEmail.error,
+        customerError: customerEmail.error
+      });
+      return NextResponse.json(
+        { error: "Failed to send emails", details: { adminEmail, customerEmail } },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json(
-      { message: "Quote request submitted successfully" },
+      { message: "Quote request submitted successfully", emailIds: {
+        admin: adminEmail.data?.id,
+        customer: customerEmail.data?.id
+      }},
       { status: 200 }
     );
   } catch (error) {
     console.error("Error processing quote request:", error);
+    console.error("Error details:", JSON.stringify(error, null, 2));
     return NextResponse.json(
-      { error: "Failed to process quote request" },
+      { error: "Failed to process quote request", details: String(error) },
       { status: 500 }
     );
   }
