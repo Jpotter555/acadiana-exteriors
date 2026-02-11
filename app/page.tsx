@@ -33,7 +33,7 @@ export default function HomePage() {
                   Contact
                 </Link>
                 <Link
-                  href="#quote"
+                  href="/quote"
                   className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition"
                 >
                   Get a Quote
@@ -61,7 +61,7 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="#quote"
+                  href="/quote"
                   className="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-700 transition text-center"
                 >
                   Request Free Quote
@@ -219,7 +219,7 @@ export default function HomePage() {
             you can trust.
           </p>
           <Link
-            href="#quote"
+            href="/quote"
             className="inline-block bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition"
           >
             Get Your Free Quote
