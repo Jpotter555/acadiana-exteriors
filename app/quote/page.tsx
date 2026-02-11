@@ -101,7 +101,7 @@ export default function QuotePage() {
             Quote Request Received!
           </h1>
           <p className="text-gray-600 mb-6">
-            Thank you for your interest! We've received your quote request and will get back to you within 24 hours.
+            Thank you for your interest! We&apos;ve received your quote request and will get back to you within 24 hours.
           </p>
           <p className="text-sm text-gray-500 mb-8">
             Check your email for a confirmation message.
@@ -268,7 +268,7 @@ export default function QuotePage() {
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
                   How can we reach you?
                 </h2>
-                <p className="text-gray-600 mb-6">We'll contact you with your quote</p>
+                <p className="text-gray-600 mb-6">We&apos;ll contact you with your quote</p>
 
                 <div className="space-y-4">
                   <div>
@@ -354,7 +354,7 @@ export default function QuotePage() {
 
                 <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
                   <p className="text-sm text-blue-900">
-                    <strong>What happens next?</strong> We'll review your request and send you a detailed quote within 24 hours. Our quotes are free with no obligation!
+                    <strong>What happens next?</strong> We&apos;ll review your request and send you a detailed quote within 24 hours. Our quotes are free with no obligation!
                   </p>
                 </div>
               </div>
