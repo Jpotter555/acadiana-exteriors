@@ -10,11 +10,9 @@ import { ArrowLeft, ArrowRight, CheckCircle, Loader2 } from "lucide-react";
 const quoteSchema = z.object({
   // Services
   services: z
-    .array(z.string(), {
-      required_error: "Please select a service(s)",
-      invalid_type_error: "Please select a service(s)"
-    })
-    .min(1, "Please select a service(s)"),
+    .array(z.string())
+    .min(1, "Please select a service(s)")
+    .default([]),
 
   // Property Details
   propertyType: z.enum(["residential", "commercial"]),
