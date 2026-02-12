@@ -2,13 +2,20 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-primary-900 via-secondary-800 to-primary-700 relative">
+      {/* Organic Texture Overlay - Bayou Water Ripples */}
+      <div className="absolute inset-0 opacity-10" style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z' fill='%23C2410C' fill-opacity='1'/%3E%3C/svg%3E")`,
+        backgroundSize: '100px 100px'
+      }}></div>
+
       {/* Navigation */}
-      <nav className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+      <nav className="border-b border-accent/30 bg-primary-800/90 backdrop-blur-md sticky top-0 z-50 shadow-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex-shrink-0">
-              <Link href="/" className="text-2xl font-bold text-primary">
+            <div className="flex-shrink-0 flex items-center gap-3">
+              <span className="text-3xl">🌿</span>
+              <Link href="/" className="text-2xl font-bold text-accent tracking-wide">
                 Acadiana Exteriors
               </Link>
             </div>
@@ -16,25 +23,25 @@ export default function HomePage() {
               <div className="ml-10 flex items-center space-x-8">
                 <Link
                   href="#services"
-                  className="text-gray-700 hover:text-primary transition"
+                  className="text-gray-100 hover:text-accent transition font-medium"
                 >
                   Services
                 </Link>
                 <Link
                   href="#about"
-                  className="text-gray-700 hover:text-primary transition"
+                  className="text-gray-100 hover:text-accent transition font-medium"
                 >
                   About
                 </Link>
                 <Link
                   href="#contact"
-                  className="text-gray-700 hover:text-primary transition"
+                  className="text-gray-100 hover:text-accent transition font-medium"
                 >
                   Contact
                 </Link>
                 <Link
                   href="/quote"
-                  className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition"
+                  className="bg-accent text-white px-6 py-2.5 rounded-lg hover:bg-accent-600 transition font-bold shadow-lg"
                 >
                   Get a Quote
                 </Link>
@@ -46,36 +53,43 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                Professional{" "}
-                <span className="text-primary">Pressure Washing</span> in
-                Acadiana
+            <div className="text-center md:text-left">
+              <div className="inline-block mb-4 px-6 py-2 bg-accent/20 rounded-full border-2 border-accent/40">
+                <span className="text-accent font-bold">🌿 Rooted in Louisiana 🌿</span>
+              </div>
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
+                Natural{" "}
+                <span className="text-accent">Exterior Care</span>
+                <br/>
+                <span className="text-3xl md:text-4xl text-gray-200">From the Bayou to Your Property</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Transform your property with expert exterior cleaning services.
-                Residential & commercial pressure washing, window cleaning,
-                gutter services, and more.
+              <p className="text-xl text-gray-100 mb-8 leading-relaxed">
+                Eco-conscious cleaning services that respect Louisiana's natural beauty.
+                Professional pressure washing with organic care.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <Link
                   href="/quote"
-                  className="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-700 transition text-center"
+                  className="bg-accent text-white px-10 py-5 rounded-xl text-lg font-bold hover:bg-accent-600 transition shadow-2xl transform hover:scale-105"
                 >
-                  Request Free Quote
+                  🌱 Get Free Quote
                 </Link>
                 <Link
                   href="#services"
-                  className="bg-white border-2 border-primary text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition text-center"
+                  className="bg-white/10 backdrop-blur-sm border-2 border-white/40 text-white px-10 py-5 rounded-xl text-lg font-bold hover:bg-white/20 transition"
                 >
-                  View Services
+                  Our Services
                 </Link>
               </div>
             </div>
             <div className="relative h-[400px] md:h-[500px]">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-600/40 to-accent/30 rounded-3xl shadow-2xl border-4 border-primary-500/30 backdrop-blur-sm"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-8xl opacity-20 space-y-4">
+                <span>🌿</span>
+                <span>💧</span>
+              </div>
               <div className="absolute inset-0 flex items-center justify-center text-gray-400">
                 <svg
                   className="w-32 h-32"
