@@ -66,7 +66,7 @@ export default function HomePage() {
                 <span className="text-3xl md:text-4xl text-gray-200">From the Bayou to Your Property</span>
               </h1>
               <p className="text-xl text-gray-100 mb-8 leading-relaxed">
-                Eco-conscious cleaning services that respect Louisiana's natural beauty.
+                Eco-conscious cleaning services that respect Louisiana&apos;s natural beauty.
                 Professional pressure washing with organic care.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
