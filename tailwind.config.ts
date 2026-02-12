@@ -9,31 +9,46 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Rustic Artisan Theme
+        // Authentic, handcrafted, locally-focused aesthetic
         primary: {
-          DEFAULT: "#0066CC",
-          50: "#E6F2FF",
-          100: "#CCE5FF",
-          200: "#99CCFF",
-          300: "#66B2FF",
-          400: "#3399FF",
-          500: "#0066CC",
-          600: "#0052A3",
-          700: "#003D7A",
-          800: "#002952",
-          900: "#001429",
+          DEFAULT: "#78716C", // Reclaimed Cypress Brown
+          50: "#FAFAF9",
+          100: "#F5F5F4",
+          200: "#E7E5E4",
+          300: "#D6D3D1",
+          400: "#A8A29E",
+          500: "#78716C",
+          600: "#57534E",
+          700: "#44403C",
+          800: "#292524",
+          900: "#1C1917",
         },
         accent: {
-          DEFAULT: "#00A86B",
-          50: "#E6F9F0",
-          100: "#CCF3E1",
-          200: "#99E7C3",
-          300: "#66DBA5",
-          400: "#33CF87",
-          500: "#00A86B",
-          600: "#008656",
-          700: "#006541",
-          800: "#00432B",
-          900: "#002216",
+          DEFAULT: "#059669", // Eucalyptus Green (eco-inspired)
+          50: "#F0FDF4",
+          100: "#DCFCE7",
+          200: "#BBF7D0",
+          300: "#86EFAC",
+          400: "#4ADE80",
+          500: "#22C55E",
+          600: "#16A34A",
+          700: "#059669",
+          800: "#047857",
+          900: "#065F46",
+        },
+        secondary: {
+          DEFAULT: "#B45309", // Clay Terracotta
+          50: "#FFF7ED",
+          100: "#FFEDD5",
+          200: "#FED7AA",
+          300: "#FDBA74",
+          400: "#FB923C",
+          500: "#F97316",
+          600: "#EA580C",
+          700: "#B45309",
+          800: "#9A3412",
+          900: "#7C2D12",
         },
       },
       fontFamily: {
