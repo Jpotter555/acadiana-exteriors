@@ -72,8 +72,9 @@ export default function HomePage() {
                 <span className="text-3xl md:text-4xl text-gray-200">Right Here in Acadiana</span>
               </h1>
               <p className="text-xl text-gray-100 mb-8 leading-relaxed">
-                From Lafayette to Breaux Bridge, we pressure wash driveways, clean windows,
-                and tackle gutters. Family-run, honest pricing, and we actually show up on time.
+                Brandon and Jonathan here - we&apos;re starting this business to serve
+                Lafayette, Breaux Bridge, and all of Acadiana. Pressure washing, windows,
+                gutters. Fair prices and we&apos;ll treat your place right.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <Link
@@ -108,7 +109,8 @@ export default function HomePage() {
               What We Do
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Been doing this for years around Acadiana. Here&apos;s what we&apos;re good at:
+              We&apos;re Brandon and Jonathan, launching this business right here in Acadiana.
+              Here&apos;s what we offer:
             </p>
           </div>
 
