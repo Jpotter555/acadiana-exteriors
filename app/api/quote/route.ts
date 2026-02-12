@@ -26,10 +26,15 @@ export async function POST(request: Request) {
       .map((s: string) => s.replace(/-/g, " ").replace(/\b\w/g, (l: string) => l.toUpperCase()))
       .join(", ");
 
-    // Email to business owner (Jonathan)
+    // Parse email recipients (supports comma-separated list)
+    const adminEmails = (process.env.RESEND_TO_EMAIL || "jonathan@acadianaexteriors.com")
+      .split(",")
+      .map((email) => email.trim());
+
+    // Email to business owner (Jonathan & Brandon)
     const adminEmail = await resend.emails.send({
       from: "Acadiana Exteriors <quotes@acadianaexteriors.com>",
-      to: process.env.RESEND_TO_EMAIL || "jonathan@acadianaexteriors.com",
+      to: adminEmails,
       subject: `New Quote Request from ${fullName}`,
       text: `
 NEW QUOTE REQUEST
