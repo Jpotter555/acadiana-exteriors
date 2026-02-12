@@ -33,7 +33,6 @@ const services = [
   { id: "window-cleaning", label: "Window Cleaning", description: "Interior and exterior windows" },
   { id: "gutter-cleaning", label: "Gutter Cleaning", description: "Cleaning and maintenance" },
   { id: "roof-cleaning", label: "Roof Cleaning", description: "Soft wash roof cleaning" },
-  { id: "deck-restoration", label: "Deck Restoration", description: "Cleaning, staining, sealing" },
 ];
 
 export default function QuotePage() {
