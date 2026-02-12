@@ -63,30 +63,30 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="text-center md:text-left">
               <div className="inline-block mb-4 px-6 py-2 bg-accent/20 border-2 border-accent rounded-full">
-                <span className="text-accent font-bold">⚜️ Louisiana Heritage ⚜️</span>
+                <span className="text-accent font-bold">⚜️ Locally Owned & Operated ⚜️</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                Professional{" "}
-                <span className="text-accent drop-shadow-lg">Pressure Washing</span>
+                We Make Your{" "}
+                <span className="text-accent drop-shadow-lg">House Shine</span>
                 <br/>
-                <span className="text-3xl md:text-4xl text-gray-200">Serving Acadiana</span>
+                <span className="text-3xl md:text-4xl text-gray-200">Right Here in Acadiana</span>
               </h1>
               <p className="text-xl text-gray-100 mb-8 leading-relaxed">
-                Transform your property with expert exterior cleaning services.
-                Residential & commercial solutions with traditional Louisiana craftsmanship.
+                From Lafayette to Breaux Bridge, we pressure wash driveways, clean windows,
+                and tackle gutters. Family-run, honest pricing, and we actually show up on time.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <Link
                   href="/quote"
                   className="bg-accent text-primary-900 px-10 py-5 rounded-lg text-lg font-bold hover:bg-accent-400 transition shadow-2xl border-4 border-accent-600 transform hover:scale-105"
                 >
-                  Request Free Quote
+                  Get Your Quote
                 </Link>
                 <Link
                   href="#services"
                   className="bg-white/10 backdrop-blur-sm border-4 border-white/30 text-white px-10 py-5 rounded-lg text-lg font-bold hover:bg-white/20 transition"
                 >
-                  View Services
+                  What We Do
                 </Link>
               </div>
             </div>
@@ -105,10 +105,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Our Services
+              What We Do
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Comprehensive exterior maintenance solutions for your property
+              Been doing this for years around Acadiana. Here&apos;s what we&apos;re good at:
             </p>
           </div>
 
@@ -134,8 +134,8 @@ export default function HomePage() {
                 Pressure Washing
               </h3>
               <p className="text-gray-600 mb-4">
-                Professional cleaning for driveways, siding, decks, patios, and
-                more. Remove dirt, grime, mold, and mildew.
+                Driveways, patios, sidewalks, siding, decks - you name it.
+                We blast away all that Louisiana dirt, mold, and grime that builds up.
               </p>
               <Link
                 href="/services/pressure-washing"
@@ -166,8 +166,8 @@ export default function HomePage() {
                 Window Cleaning
               </h3>
               <p className="text-gray-600 mb-4">
-                Crystal clear windows inside and out. Residential and
-                commercial window washing services available.
+                Streak-free windows for homes and businesses. Inside, outside,
+                screens too. Makes a bigger difference than you&apos;d think.
               </p>
               <Link
                 href="/services/window-cleaning"
@@ -195,11 +195,11 @@ export default function HomePage() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                Gutter Services
+                Gutter Cleaning
               </h3>
               <p className="text-gray-600 mb-4">
-                Keep your gutters flowing freely. Cleaning, maintenance, and
-                inspection services to protect your property.
+                With all the rain we get? Your gutters need this. We clean out
+                the leaves, moss, and whatever else ends up in there.
               </p>
               <Link
                 href="/services/gutter-services"
@@ -216,17 +216,17 @@ export default function HomePage() {
       <section className="py-20 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">
-            Ready to Transform Your Property?
+            Ready to Get Started?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Get a free, no-obligation quote today. Fast, professional service
-            you can trust.
+            Fill out a quick form and we&apos;ll get you a price. No sales pitch,
+            just honest work at a fair rate.
           </p>
           <Link
             href="/quote"
             className="inline-block bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition"
           >
-            Get Your Free Quote
+            Get a Quote
           </Link>
         </div>
       </section>
@@ -238,8 +238,8 @@ export default function HomePage() {
             <div>
               <h3 className="text-2xl font-bold mb-4">Acadiana Exteriors</h3>
               <p className="text-gray-400">
-                Professional exterior maintenance services in Acadiana,
-                Louisiana.
+                Pressure washing, window cleaning, and gutter services
+                throughout Acadiana. Based right here in Louisiana.
               </p>
             </div>
             <div>
