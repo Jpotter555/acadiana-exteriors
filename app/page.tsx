@@ -2,13 +2,22 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-primary-600 via-secondary-500 to-accent-600 relative animate-gradient">
+      {/* Bold Zigzag Pattern - Festival Energy */}
+      <div className="absolute inset-0 opacity-15" style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40' fill='%23EAB308' fill-opacity='1'/%3E%3C/svg%3E")`,
+        backgroundSize: '40px 40px',
+        transform: 'rotate(15deg)',
+        transformOrigin: 'center'
+      }}></div>
+
       {/* Navigation */}
-      <nav className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+      <nav className="border-b-4 border-highlight bg-primary-700/95 backdrop-blur-md sticky top-0 z-50 shadow-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex-shrink-0">
-              <Link href="/" className="text-2xl font-bold text-primary">
+            <div className="flex-shrink-0 flex items-center gap-3">
+              <span className="text-4xl animate-pulse">🎵</span>
+              <Link href="/" className="text-2xl font-bold text-highlight tracking-wider">
                 Acadiana Exteriors
               </Link>
             </div>
@@ -16,27 +25,27 @@ export default function HomePage() {
               <div className="ml-10 flex items-center space-x-8">
                 <Link
                   href="#services"
-                  className="text-gray-700 hover:text-primary transition"
+                  className="text-white hover:text-highlight transition font-bold"
                 >
                   Services
                 </Link>
                 <Link
                   href="#about"
-                  className="text-gray-700 hover:text-primary transition"
+                  className="text-white hover:text-highlight transition font-bold"
                 >
                   About
                 </Link>
                 <Link
                   href="#contact"
-                  className="text-gray-700 hover:text-primary transition"
+                  className="text-white hover:text-highlight transition font-bold"
                 >
                   Contact
                 </Link>
                 <Link
                   href="/quote"
-                  className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition"
+                  className="bg-highlight text-primary-900 px-6 py-2.5 rounded-xl hover:bg-highlight-400 transition font-black shadow-lg border-4 border-highlight-600 transform hover:scale-110"
                 >
-                  Get a Quote
+                  🔥 Get a Quote
                 </Link>
               </div>
             </div>
@@ -46,36 +55,46 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                Professional{" "}
-                <span className="text-primary">Pressure Washing</span> in
-                Acadiana
+            <div className="text-center md:text-left">
+              <div className="inline-block mb-4 px-8 py-3 bg-highlight/30 rounded-full border-4 border-highlight animate-bounce">
+                <span className="text-highlight font-black text-lg">🎉 LAISSEZ LES BONS TEMPS ROULER! 🎉</span>
+              </div>
+              <h1 className="text-6xl md:text-8xl font-black text-white mb-6 leading-none drop-shadow-2xl">
+                <span className="text-highlight">POWER</span>{" "}
+                <span className="text-secondary-200">WASH</span>
+                <br/>
+                <span className="text-4xl md:text-5xl text-white">Like You Mean It!</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Transform your property with expert exterior cleaning services.
-                Residential & commercial pressure washing, window cleaning,
-                gutter services, and more.
+              <p className="text-2xl text-white font-bold mb-8 leading-relaxed">
+                🔥 Bold. Bright. Brilliant. 🔥
+                <br/>
+                <span className="text-highlight">Premium exterior cleaning</span> with Cajun flair!
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <Link
                   href="/quote"
-                  className="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-700 transition text-center"
+                  className="bg-secondary text-white px-12 py-6 rounded-2xl text-xl font-black hover:bg-secondary-700 transition shadow-2xl transform hover:scale-110 border-4 border-white"
                 >
-                  Request Free Quote
+                  🌟 GET FREE QUOTE 🌟
                 </Link>
                 <Link
                   href="#services"
-                  className="bg-white border-2 border-primary text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition text-center"
+                  className="bg-highlight text-primary-900 px-12 py-6 rounded-2xl text-xl font-black hover:bg-highlight-400 transition shadow-2xl transform hover:scale-110"
                 >
-                  View Services
+                  🎵 See Services
                 </Link>
               </div>
             </div>
             <div className="relative h-[400px] md:h-[500px]">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-highlight/40 to-secondary/40 rounded-3xl shadow-2xl border-8 border-white/30 backdrop-blur-sm animate-pulse"></div>
+              <div className="absolute inset-0 flex flex-wrap items-center justify-center text-7xl opacity-30 gap-4">
+                <span>🎵</span>
+                <span>🎺</span>
+                <span>🦞</span>
+                <span>🌶️</span>
+              </div>
               <div className="absolute inset-0 flex items-center justify-center text-gray-400">
                 <svg
                   className="w-32 h-32"
