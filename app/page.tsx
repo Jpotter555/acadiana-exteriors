@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -19,10 +20,16 @@ export default function HomePage() {
       <nav className="border-b border-accent/20 bg-primary-900/95 backdrop-blur-sm sticky top-0 z-50 shadow-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex-shrink-0 flex items-center gap-3">
-              <span className="text-3xl text-accent">⚜️</span>
-              <Link href="/" className="text-2xl font-bold text-accent tracking-wide">
-                Acadiana Exteriors
+            <div className="flex-shrink-0 flex items-center">
+              <Link href="/" className="flex items-center">
+                <Image
+                  src="/images/logo.svg"
+                  alt="Acadiana Exteriors"
+                  width={200}
+                  height={50}
+                  className="h-12 w-auto"
+                  priority
+                />
               </Link>
             </div>
             <div className="hidden md:block">
@@ -238,7 +245,13 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Acadiana Exteriors</h3>
+              <Image
+                src="/images/logo.svg"
+                alt="Acadiana Exteriors"
+                width={180}
+                height={45}
+                className="h-10 w-auto mb-4"
+              />
               <p className="text-gray-400">
                 Pressure washing, window cleaning, and gutter services
                 throughout Acadiana. Based right here in Louisiana.

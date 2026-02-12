@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "property maintenance",
   ],
   authors: [{ name: "Acadiana Exteriors" }],
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "Acadiana Exteriors | Exterior Maintenance Services",
     description:
@@ -24,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Acadiana Exteriors - Exterior Maintenance Services",
@@ -36,7 +39,7 @@ export const metadata: Metadata = {
     title: "Acadiana Exteriors | Exterior Maintenance Services",
     description:
       "Exterior maintenance for homes and businesses in Acadiana, LA",
-    images: ["/images/og-image.jpg"],
+    images: ["/images/og-image.png"],
   },
 };
 
