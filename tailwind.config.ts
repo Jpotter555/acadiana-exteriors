@@ -9,31 +9,46 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Traditional Cajun Heritage Theme
+        // Deep Blue from Acadian flag, Crimson Red from Spanish colonial, Gold from flag's star/castle
         primary: {
-          DEFAULT: "#0066CC",
-          50: "#E6F2FF",
-          100: "#CCE5FF",
-          200: "#99CCFF",
-          300: "#66B2FF",
-          400: "#3399FF",
-          500: "#0066CC",
-          600: "#0052A3",
-          700: "#003D7A",
-          800: "#002952",
-          900: "#001429",
+          DEFAULT: "#1E3A8A", // Deep Blue
+          50: "#EFF6FF",
+          100: "#DBEAFE",
+          200: "#BFDBFE",
+          300: "#93C5FD",
+          400: "#60A5FA",
+          500: "#1E3A8A",
+          600: "#1E40AF",
+          700: "#1D4ED8",
+          800: "#1E3A8A",
+          900: "#1E3A70",
         },
         accent: {
-          DEFAULT: "#00A86B",
-          50: "#E6F9F0",
-          100: "#CCF3E1",
-          200: "#99E7C3",
-          300: "#66DBA5",
-          400: "#33CF87",
-          500: "#00A86B",
-          600: "#008656",
-          700: "#006541",
-          800: "#00432B",
-          900: "#002216",
+          DEFAULT: "#F59E0B", // Gold/Mustard
+          50: "#FFFBEB",
+          100: "#FEF3C7",
+          200: "#FDE68A",
+          300: "#FCD34D",
+          400: "#FBBF24",
+          500: "#F59E0B",
+          600: "#D97706",
+          700: "#B45309",
+          800: "#92400E",
+          900: "#78350F",
+        },
+        secondary: {
+          DEFAULT: "#991B1B", // Crimson Red
+          50: "#FEF2F2",
+          100: "#FEE2E2",
+          200: "#FECACA",
+          300: "#FCA5A5",
+          400: "#F87171",
+          500: "#EF4444",
+          600: "#DC2626",
+          700: "#991B1B",
+          800: "#7F1D1D",
+          900: "#7F1D1D",
         },
       },
       fontFamily: {
