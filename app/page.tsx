@@ -4,10 +4,16 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary-900 via-secondary-700 to-primary-800 relative">
       {/* Fleur-de-lis Pattern Overlay */}
-      <div className="absolute inset-0 opacity-5" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 10c-2 0-3 1-3 3v5c0 2-1 3-3 3s-3-1-3-3c0-3-2-5-5-5s-5 2-5 5c0 4 3 7 7 7 1 0 2 0 3 1v8c0 2 1 3 3 3s3-1 3-3v-8c1-1 2-1 3-1 4 0 7-3 7-7 0-3-2-5-5-5s-5 2-5 5c0 2-1 3-3 3s-3-1-3-3v-5c0-2-1-3-3-3z' fill='%23F59E0B' fill-opacity='1'/%3E%3C/svg%3E")`,
-        backgroundSize: '60px 60px'
-      }}></div>
+      <div className="absolute inset-0 opacity-10 pointer-events-none select-none"
+        style={{
+          backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 100px, rgba(245, 158, 11, 0.1) 100px, rgba(245, 158, 11, 0.1) 200px)`,
+        }}>
+        <div className="absolute inset-0 flex flex-wrap gap-20 p-10">
+          {[...Array(20)].map((_, i) => (
+            <span key={i} className="text-4xl text-accent opacity-30">⚜️</span>
+          ))}
+        </div>
+      </div>
 
       {/* Navigation */}
       <nav className="border-b border-accent/20 bg-primary-900/95 backdrop-blur-sm sticky top-0 z-50 shadow-xl">
@@ -88,21 +94,6 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-br from-accent/30 to-secondary/30 rounded-2xl shadow-2xl border-4 border-accent/50 backdrop-blur-sm"></div>
               <div className="absolute inset-0 flex items-center justify-center text-9xl opacity-20">
                 ⚜️
-              </div>
-              <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                <svg
-                  className="w-32 h-32"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                  />
-                </svg>
               </div>
             </div>
           </div>
