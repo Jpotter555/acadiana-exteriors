@@ -50,6 +50,9 @@ export default function QuotePage() {
   } = useForm<QuoteFormData>({
     resolver: zodResolver(quoteSchema),
     mode: "onChange",
+    defaultValues: {
+      services: [],
+    },
   });
 
   const selectedServices = watch("services") || [];
