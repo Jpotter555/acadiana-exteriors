@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Acadiana Exteriors | Exterior Maintenance Services in Louisiana",
+  title: "Acadiana Exteriors | Exterior Cleaning Services in Louisiana",
   description:
-    "Exterior maintenance services for your home or business - pressure washing, window cleaning, gutter services, and more in Acadiana, Louisiana.",
+    "Exterior cleaning services for your home or business - pressure washing, window cleaning, gutter services, and more in Acadiana, Louisiana.",
   keywords: [
     "pressure washing",
     "exterior cleaning",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Acadiana Exteriors | Exterior Maintenance Services",
+    title: "Acadiana Exteriors | Exterior Cleaning Services",
     description:
-      "Exterior maintenance services for homes and businesses in Acadiana - pressure washing, windows, gutters, and more",
+      "Exterior cleaning services for homes and businesses in Acadiana - pressure washing, windows, gutters, and more",
     url: "https://acadianaexteriors.com",
     siteName: "Acadiana Exteriors",
     type: "website",
@@ -30,15 +30,15 @@ export const metadata: Metadata = {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Acadiana Exteriors - Exterior Maintenance Services",
+        alt: "Acadiana Exteriors - Exterior Cleaning Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Acadiana Exteriors | Exterior Maintenance Services",
+    title: "Acadiana Exteriors | Exterior Cleaning Services",
     description:
-      "Exterior maintenance for homes and businesses in Acadiana, LA",
+      "Exterior cleaning for homes and businesses in Acadiana, LA",
     images: ["/images/og-image.png"],
   },
 };
