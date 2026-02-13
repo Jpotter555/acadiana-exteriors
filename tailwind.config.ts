@@ -9,45 +9,45 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Brand colors from Acadiana Exteriors logo
+        // Refined color palette for Acadiana Exteriors
         primary: {
-          DEFAULT: "#DC2626", // Brand Red
-          50: "#FEF2F2",
-          100: "#FEE2E2",
-          200: "#FECACA",
-          300: "#FCA5A5",
-          400: "#F87171",
-          500: "#EF4444",
-          600: "#DC2626",
-          700: "#B91C1C",
-          800: "#991B1B",
-          900: "#7F1D1D",
+          DEFAULT: "#5E7B83", // Teal Blue-gray
+          50: "#F0F4F5",
+          100: "#E1E9EB",
+          200: "#C2CCCD",
+          300: "#A4B5B9",
+          400: "#819599",
+          500: "#5E7B83",
+          600: "#4E6670",
+          700: "#3E515C",
+          800: "#2E3C48",
+          900: "#1E2734",
         },
         secondary: {
-          DEFAULT: "#467387", // Teal Blue from logo
-          50: "#F0F9FF",
-          100: "#E0F2FE",
-          200: "#BAE6FD",
-          300: "#7DD3FC",
-          400: "#38BDF8",
-          500: "#467387",
-          600: "#3C6373",
-          700: "#32535F",
-          800: "#28434B",
-          900: "#1E3337",
+          DEFAULT: "#D2AF6F", // Gold/Tan
+          50: "#FAF7F1",
+          100: "#F5EFE3",
+          200: "#EBDFC7",
+          300: "#E0CFAB",
+          400: "#D6BF8F",
+          500: "#D2AF6F",
+          600: "#C39F5C",
+          700: "#A88546",
+          800: "#806534",
+          900: "#584522",
         },
         accent: {
-          DEFAULT: "#1F2937", // Dark gray for contrast
-          50: "#F9FAFB",
-          100: "#F3F4F6",
-          200: "#E5E7EB",
-          300: "#D1D5DB",
-          400: "#9CA3AF",
-          500: "#6B7280",
-          600: "#4B5563",
-          700: "#374151",
-          800: "#1F2937",
-          900: "#111827",
+          DEFAULT: "#9D7B56", // Brown/Tan
+          50: "#F5F1EC",
+          100: "#EBE3D9",
+          200: "#D7C7B3",
+          300: "#C3AB8D",
+          400: "#AF8F67",
+          500: "#9D7B56",
+          600: "#826546",
+          700: "#674F36",
+          800: "#4C3926",
+          900: "#312316",
         },
       },
       fontFamily: {
