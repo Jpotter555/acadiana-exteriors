@@ -7,15 +7,15 @@ export default function HomePage() {
       {/* Navigation */}
       <nav className="border-b border-gray-200 bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-24">
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="flex flex-col">
                 <Image
                   src="/images/logo.svg"
                   alt="Acadiana Exteriors"
-                  width={200}
-                  height={50}
-                  className="h-12 w-auto"
+                  width={280}
+                  height={70}
+                  className="h-16 w-auto"
                   priority
                 />
                 <span className="text-primary text-sm font-semibold mt-1 tracking-wide">
