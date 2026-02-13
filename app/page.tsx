@@ -21,7 +21,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="flex items-center">
+              <Link href="/" className="flex flex-col">
                 <Image
                   src="/images/logo.svg"
                   alt="Acadiana Exteriors"
@@ -30,6 +30,9 @@ export default function HomePage() {
                   className="h-12 w-auto"
                   priority
                 />
+                <span className="text-accent text-sm font-semibold mt-1 tracking-wide">
+                  Fair Prices, Clean Places
+                </span>
               </Link>
             </div>
             <div className="hidden md:block">
@@ -69,8 +72,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="text-center md:text-left">
-              <div className="inline-block mb-4 px-6 py-2 bg-accent/20 border-2 border-accent rounded-full">
-                <span className="text-accent font-bold">⚜️ Locally Owned & Operated ⚜️</span>
+              <div className="inline-block mb-4 px-8 py-3 bg-accent/20 border-2 border-accent rounded-full">
+                <span className="text-accent font-bold text-lg">Fair Prices, Clean Places</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
                 We Make Your{" "}
