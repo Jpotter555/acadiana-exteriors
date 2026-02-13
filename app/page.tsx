@@ -11,7 +11,7 @@ export default function HomePage() {
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="flex items-center gap-3">
                 <Image
-                  src="/images/logo-symbol.png"
+                  src="/images/logo-symbol.svg"
                   alt="Acadiana Exteriors"
                   width={60}
                   height={60}
