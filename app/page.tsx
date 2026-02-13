@@ -9,7 +9,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-24">
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="flex flex-col">
+              <Link href="/">
                 <Image
                   src="/images/logo.svg"
                   alt="Acadiana Exteriors"
@@ -18,9 +18,6 @@ export default function HomePage() {
                   className="h-16 w-auto"
                   priority
                 />
-                <span className="text-primary text-sm font-semibold mt-1 tracking-wide">
-                  Fair Prices, Clean Places
-                </span>
               </Link>
             </div>
             <div className="hidden md:block">
@@ -65,7 +62,7 @@ export default function HomePage() {
               </div>
               <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
                 We Make Your{" "}
-                <span className="text-primary">House Shine</span>
+                <span className="text-primary">Property Shine</span>
                 <br/>
                 <span className="text-3xl md:text-4xl text-secondary">Right Here in Acadiana</span>
               </h1>
