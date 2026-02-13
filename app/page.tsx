@@ -9,15 +9,18 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-24">
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/">
+              <Link href="/" className="flex items-center gap-3">
                 <Image
-                  src="/images/logo.svg"
+                  src="/images/logo-symbol.png"
                   alt="Acadiana Exteriors"
-                  width={280}
-                  height={70}
-                  className="h-16 w-auto"
+                  width={60}
+                  height={60}
+                  className="h-14 w-14 object-contain"
                   priority
                 />
+                <span className="text-2xl font-bold text-primary">
+                  Acadiana Exteriors
+                </span>
               </Link>
             </div>
             <div className="hidden md:block">
