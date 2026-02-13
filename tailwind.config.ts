@@ -9,36 +9,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Traditional Cajun Heritage Theme
-        // Deep Blue from Acadian flag, Crimson Red from Spanish colonial, Gold from flag's star/castle
+        // Brand colors from Acadiana Exteriors logo
         primary: {
-          DEFAULT: "#1E3A8A", // Deep Blue
-          50: "#EFF6FF",
-          100: "#DBEAFE",
-          200: "#BFDBFE",
-          300: "#93C5FD",
-          400: "#60A5FA",
-          500: "#1E3A8A",
-          600: "#1E40AF",
-          700: "#1D4ED8",
-          800: "#1E3A8A",
-          900: "#1E3A70",
-        },
-        accent: {
-          DEFAULT: "#F59E0B", // Gold/Mustard
-          50: "#FFFBEB",
-          100: "#FEF3C7",
-          200: "#FDE68A",
-          300: "#FCD34D",
-          400: "#FBBF24",
-          500: "#F59E0B",
-          600: "#D97706",
-          700: "#B45309",
-          800: "#92400E",
-          900: "#78350F",
-        },
-        secondary: {
-          DEFAULT: "#991B1B", // Crimson Red
+          DEFAULT: "#DC2626", // Brand Red
           50: "#FEF2F2",
           100: "#FEE2E2",
           200: "#FECACA",
@@ -46,9 +19,35 @@ export default {
           400: "#F87171",
           500: "#EF4444",
           600: "#DC2626",
-          700: "#991B1B",
-          800: "#7F1D1D",
+          700: "#B91C1C",
+          800: "#991B1B",
           900: "#7F1D1D",
+        },
+        secondary: {
+          DEFAULT: "#467387", // Teal Blue from logo
+          50: "#F0F9FF",
+          100: "#E0F2FE",
+          200: "#BAE6FD",
+          300: "#7DD3FC",
+          400: "#38BDF8",
+          500: "#467387",
+          600: "#3C6373",
+          700: "#32535F",
+          800: "#28434B",
+          900: "#1E3337",
+        },
+        accent: {
+          DEFAULT: "#1F2937", // Dark gray for contrast
+          50: "#F9FAFB",
+          100: "#F3F4F6",
+          200: "#E5E7EB",
+          300: "#D1D5DB",
+          400: "#9CA3AF",
+          500: "#6B7280",
+          600: "#4B5563",
+          700: "#374151",
+          800: "#1F2937",
+          900: "#111827",
         },
       },
       fontFamily: {

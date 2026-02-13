@@ -3,21 +3,9 @@ import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-900 via-secondary-700 to-primary-800 relative">
-      {/* Fleur-de-lis Pattern Overlay */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none select-none"
-        style={{
-          backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 100px, rgba(245, 158, 11, 0.1) 100px, rgba(245, 158, 11, 0.1) 200px)`,
-        }}>
-        <div className="absolute inset-0 flex flex-wrap gap-20 p-10">
-          {[...Array(20)].map((_, i) => (
-            <span key={i} className="text-4xl text-accent opacity-30">⚜️</span>
-          ))}
-        </div>
-      </div>
-
+    <div className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-gray-100 relative">
       {/* Navigation */}
-      <nav className="border-b border-accent/20 bg-primary-900/95 backdrop-blur-sm sticky top-0 z-50 shadow-xl">
+      <nav className="border-b border-gray-200 bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0 flex items-center">
@@ -30,7 +18,7 @@ export default function HomePage() {
                   className="h-12 w-auto"
                   priority
                 />
-                <span className="text-accent text-sm font-semibold mt-1 tracking-wide">
+                <span className="text-primary text-sm font-semibold mt-1 tracking-wide">
                   Fair Prices, Clean Places
                 </span>
               </Link>
@@ -39,25 +27,25 @@ export default function HomePage() {
               <div className="ml-10 flex items-center space-x-8">
                 <Link
                   href="#services"
-                  className="text-gray-100 hover:text-accent transition font-medium"
+                  className="text-gray-700 hover:text-primary transition font-medium"
                 >
                   Services
                 </Link>
                 <Link
                   href="#about"
-                  className="text-gray-100 hover:text-accent transition font-medium"
+                  className="text-gray-700 hover:text-primary transition font-medium"
                 >
                   About
                 </Link>
                 <Link
                   href="#contact"
-                  className="text-gray-100 hover:text-accent transition font-medium"
+                  className="text-gray-700 hover:text-primary transition font-medium"
                 >
                   Contact
                 </Link>
                 <Link
                   href="/quote"
-                  className="bg-accent text-primary-900 px-6 py-2.5 rounded-lg hover:bg-accent-400 transition font-bold shadow-lg border-2 border-accent-600"
+                  className="bg-primary text-white px-6 py-2.5 rounded-lg hover:bg-primary-700 transition font-bold shadow-lg"
                 >
                   Get a Quote
                 </Link>
@@ -72,16 +60,16 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="text-center md:text-left">
-              <div className="inline-block mb-4 px-8 py-3 bg-accent/20 border-2 border-accent rounded-full">
-                <span className="text-accent font-bold text-lg">Fair Prices, Clean Places</span>
+              <div className="inline-block mb-4 px-8 py-3 bg-primary/10 border-2 border-primary rounded-full">
+                <span className="text-primary font-bold text-lg">Fair Prices, Clean Places</span>
               </div>
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
                 We Make Your{" "}
-                <span className="text-accent drop-shadow-lg">House Shine</span>
+                <span className="text-primary">House Shine</span>
                 <br/>
-                <span className="text-3xl md:text-4xl text-gray-200">Right Here in Acadiana</span>
+                <span className="text-3xl md:text-4xl text-secondary">Right Here in Acadiana</span>
               </h1>
-              <p className="text-xl text-gray-100 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
                 Brandon and Jonathan here - we&apos;re starting this business to serve
                 Lafayette, Breaux Bridge, and all of Acadiana. Pressure washing, windows,
                 gutters. Fair prices and we&apos;ll treat your place right.
@@ -89,22 +77,28 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <Link
                   href="/quote"
-                  className="bg-accent text-primary-900 px-10 py-5 rounded-lg text-lg font-bold hover:bg-accent-400 transition shadow-2xl border-4 border-accent-600 transform hover:scale-105"
+                  className="bg-primary text-white px-10 py-5 rounded-lg text-lg font-bold hover:bg-primary-700 transition shadow-xl transform hover:scale-105"
                 >
                   Get Your Quote
                 </Link>
                 <Link
                   href="#services"
-                  className="bg-white/10 backdrop-blur-sm border-4 border-white/30 text-white px-10 py-5 rounded-lg text-lg font-bold hover:bg-white/20 transition"
+                  className="bg-secondary text-white px-10 py-5 rounded-lg text-lg font-bold hover:bg-secondary-700 transition shadow-xl"
                 >
                   What We Do
                 </Link>
               </div>
             </div>
             <div className="relative h-[400px] md:h-[500px]">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/30 to-secondary/30 rounded-2xl shadow-2xl border-4 border-accent/50 backdrop-blur-sm"></div>
-              <div className="absolute inset-0 flex items-center justify-center text-9xl opacity-20">
-                ⚜️
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl shadow-2xl border-4 border-gray-200 backdrop-blur-sm"></div>
+              <div className="absolute inset-0 flex items-center justify-center p-8">
+                <Image
+                  src="/images/logo.svg"
+                  alt="Acadiana Exteriors"
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-contain opacity-20"
+                />
               </div>
             </div>
           </div>
@@ -159,9 +153,9 @@ export default function HomePage() {
 
             {/* Service Card 2 */}
             <div className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition">
-              <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
                 <svg
-                  className="w-6 h-6 text-accent"
+                  className="w-6 h-6 text-secondary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -183,7 +177,7 @@ export default function HomePage() {
               </p>
               <Link
                 href="/services/window-cleaning"
-                className="text-accent font-semibold hover:underline"
+                className="text-secondary font-semibold hover:underline"
               >
                 Learn More →
               </Link>
@@ -223,9 +217,9 @@ export default function HomePage() {
 
             {/* Service Card 4 */}
             <div className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition">
-              <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
                 <svg
-                  className="w-6 h-6 text-accent"
+                  className="w-6 h-6 text-secondary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -247,7 +241,7 @@ export default function HomePage() {
               </p>
               <Link
                 href="/services/can-cleaning"
-                className="text-accent font-semibold hover:underline"
+                className="text-secondary font-semibold hover:underline"
               >
                 Learn More →
               </Link>
