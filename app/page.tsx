@@ -121,7 +121,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Service Card 1 */}
             <div className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
@@ -217,6 +217,38 @@ export default function HomePage() {
                 Learn More →
               </Link>
             </div>
+
+            {/* Service Card 4 */}
+            <div className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition">
+              <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                <svg
+                  className="w-6 h-6 text-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                Can Cleaning
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Trash cans get nasty quick in Louisiana heat. We&apos;ll pressure wash
+                and sanitize your bins so they don&apos;t smell up your property.
+              </p>
+              <Link
+                href="/services/can-cleaning"
+                className="text-accent font-semibold hover:underline"
+              >
+                Learn More →
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -253,7 +285,7 @@ export default function HomePage() {
                 className="h-10 w-auto mb-4"
               />
               <p className="text-gray-400">
-                Pressure washing, window cleaning, and gutter services
+                Pressure washing, window cleaning, gutter services, and can cleaning
                 throughout Acadiana. Based right here in Louisiana.
               </p>
             </div>
@@ -278,11 +310,10 @@ export default function HomePage() {
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">Contact</h4>
-              <p className="text-gray-400 mb-2">Serving Acadiana, Louisiana</p>
-              <p className="text-gray-400">
-                Contact: <span className="text-white">Jonathan</span>
-              </p>
+              <h4 className="text-lg font-semibold mb-4">Quote Availability</h4>
+              <p className="text-gray-400 mb-2">Get a quote anytime 24/7</p>
+              <p className="text-gray-400 mb-2">We respond within 24 hours</p>
+              <p className="text-gray-400">Serving all of Acadiana</p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
