@@ -44,6 +44,12 @@ export default function HomePage() {
                 >
                   Contact
                 </Link>
+                <a
+                  href="tel:+19857099200"
+                  className="text-gray-700 hover:text-primary transition font-medium"
+                >
+                  (985) 709-9200
+                </a>
                 <Link
                   href="/quote"
                   className="bg-primary text-white px-6 py-2.5 rounded-lg hover:bg-primary-700 transition font-bold shadow-lg"
@@ -304,10 +310,23 @@ export default function HomePage() {
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">Quote Availability</h4>
+              <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
+              <p className="text-gray-400 mb-2">
+                <a href="tel:+19857099200" className="hover:text-white transition">(985) 709-9200</a>
+              </p>
               <p className="text-gray-400 mb-2">Get a quote anytime 24/7</p>
-              <p className="text-gray-400 mb-2">We respond within 24 hours</p>
-              <p className="text-gray-400">Serving all of Acadiana</p>
+              <p className="text-gray-400 mb-4">Serving all of Acadiana</p>
+              <a
+                href="https://www.facebook.com/profile.php?id=61588205375764"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                Follow us on Facebook
+              </a>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
