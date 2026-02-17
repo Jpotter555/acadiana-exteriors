@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 
 export default function HomePage() {
   return (
@@ -90,16 +91,12 @@ export default function HomePage() {
               </div>
             </div>
             <div className="relative h-[400px] md:h-[500px]">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl shadow-2xl border-4 border-gray-200 backdrop-blur-sm"></div>
-              <div className="absolute inset-0 flex items-center justify-center p-12">
-                <Image
-                  src="/images/logo.svg"
-                  alt="Acadiana Exteriors"
-                  width={400}
-                  height={400}
-                  className="w-full h-full object-contain"
-                />
-              </div>
+              <BeforeAfterSlider
+                beforeImage="/images/before-driveway.jpg"
+                afterImage="/images/after-driveway.jpg"
+                beforeAlt="Dirty driveway before pressure washing"
+                afterAlt="Clean driveway after pressure washing"
+              />
             </div>
           </div>
         </div>
