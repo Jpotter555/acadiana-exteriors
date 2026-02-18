@@ -357,6 +357,90 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-gray-600">
+              Got questions? We&apos;ve got answers.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {[
+              {
+                question: "How much does pressure washing cost?",
+                answer:
+                  "Every job is different, so we provide free quotes based on the size and condition of the area. We pride ourselves on fair, honest pricing with no hidden fees. Fill out our quote form or give us a call and we'll get you a price quickly.",
+              },
+              {
+                question: "What areas do you serve?",
+                answer:
+                  "We serve all of Acadiana including Lafayette, Broussard, Youngsville, Breaux Bridge, Scott, Carencro, Duson, Rayne, Crowley, and surrounding areas. If you're not sure whether you're in our service area, just give us a call!",
+              },
+              {
+                question: "How do I get a quote?",
+                answer:
+                  "You can fill out our online quote form anytime 24/7, call us at (985) 709-9200, or send us a message on Facebook or Instagram. We typically respond within 24 hours.",
+              },
+              {
+                question: "Will pressure washing damage my property?",
+                answer:
+                  "Not when it's done right. We adjust the pressure and technique based on the surface — concrete driveways can handle high pressure, while siding and wood get a gentler soft wash. We know what we're doing and treat your property with care.",
+              },
+              {
+                question: "How often should I get my house or driveway pressure washed?",
+                answer:
+                  "For most homes in Louisiana, we recommend once a year. Our humidity and weather cause mold, mildew, and algae to build up faster than in drier climates. Regular cleaning keeps your property looking great and prevents long-term damage.",
+              },
+              {
+                question: "Do I need to be home during the service?",
+                answer:
+                  "Not necessarily. As long as we have access to the areas that need cleaning and a water source, we can get the job done. We'll coordinate everything with you beforehand.",
+              },
+              {
+                question: "What services do you offer?",
+                answer:
+                  "We offer pressure washing, window cleaning, gutter cleaning, and trash can cleaning. Whether it's your driveway, patio, siding, sidewalks, or the whole exterior — we've got you covered.",
+              },
+              {
+                question: "How long does a typical job take?",
+                answer:
+                  "It depends on the size and scope of the job. A standard driveway usually takes about 1-2 hours. A full house wash with driveway and sidewalks might take half a day. We'll give you a time estimate when we quote the job.",
+              },
+            ].map((faq, index) => (
+              <details
+                key={index}
+                className="group border border-gray-200 rounded-xl overflow-hidden"
+              >
+                <summary className="flex items-center justify-between cursor-pointer px-6 py-5 bg-gray-50 hover:bg-gray-100 transition font-semibold text-gray-900">
+                  {faq.question}
+                  <svg
+                    className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </summary>
+                <div className="px-6 py-5 text-gray-600 leading-relaxed">
+                  {faq.answer}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
