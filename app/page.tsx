@@ -476,6 +476,11 @@ export default function HomePage() {
                     Contact
                   </Link>
                 </li>
+                <li>
+                  <Link href="/pay" className="text-gray-400 hover:text-white transition">
+                    Pay Invoice
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
