@@ -511,7 +511,7 @@ export default function HomePage() {
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>
-              &copy; {new Date().getFullYear()} Acadiana Exteriors. All rights
+              &copy; {new Date().getFullYear()} Acadiana Exteriors LLC. All rights
               reserved.
             </p>
           </div>
