@@ -13,7 +13,7 @@ const quoteSchema = z.object({
 
   // Property Details
   propertyType: z.enum(["residential", "commercial"]),
-  propertyAddress: z.string().min(5, "Please enter a valid address"),
+  propertyAddress: z.string().optional(),
   propertySize: z.string().optional(),
 
   // Contact Information
@@ -61,7 +61,7 @@ export default function QuotePage() {
     let fieldsToValidate: (keyof QuoteFormData)[] = [];
 
     if (step === 1) fieldsToValidate = ["services"];
-    if (step === 2) fieldsToValidate = ["propertyType", "propertyAddress"];
+    if (step === 2) fieldsToValidate = ["propertyType"];
     if (step === 3) fieldsToValidate = ["fullName", "email", "phone"];
 
     const isValid = await trigger(fieldsToValidate);
@@ -197,7 +197,7 @@ export default function QuotePage() {
             {step === 1 && (
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                  What services do you need?
+                  How can we help your property shine?
                 </h2>
                 <p className="text-gray-600 mb-6">Select all that apply</p>
 
@@ -276,7 +276,7 @@ export default function QuotePage() {
 
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Property Address *
+                      Property Address (optional)
                     </label>
                     <input
                       type="text"
@@ -284,11 +284,6 @@ export default function QuotePage() {
                       placeholder="123 Main St, Lafayette, LA"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900 placeholder:text-gray-500"
                     />
-                    {errors.propertyAddress && (
-                      <p className="mt-1 text-sm text-red-600">
-                        {errors.propertyAddress.message}
-                      </p>
-                    )}
                   </div>
 
                   <div>
