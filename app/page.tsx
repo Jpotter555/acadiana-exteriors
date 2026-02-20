@@ -292,15 +292,15 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                &ldquo;Brandon and Jonathan did an amazing job on our driveway. It looked brand new when they were done. They were on time, professional, and the price was very fair. Will definitely be calling them again!&rdquo;
+                &ldquo;Jonathan and Brandon were exceptional in their services to pressure wash my home and drive way. Definitely would recommend!&rdquo;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold text-sm">ML</span>
+                  <span className="text-primary font-bold text-sm">JC</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Marie L.</p>
-                  <p className="text-sm text-gray-500">Lafayette, LA</p>
+                  <p className="font-semibold text-gray-900">Jake Chauvin</p>
+                  <p className="text-sm text-gray-500">Google Review</p>
                 </div>
               </div>
             </div>
