@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
+import MobileNav from "@/components/MobileNav";
 
 export default function HomePage() {
   return (
@@ -24,6 +25,8 @@ export default function HomePage() {
                 </span>
               </Link>
             </div>
+            <MobileNav />
+            {/* Desktop nav */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-center space-x-8">
                 <Link
@@ -37,12 +40,6 @@ export default function HomePage() {
                   className="text-gray-700 hover:text-primary transition font-medium"
                 >
                   About
-                </Link>
-                <Link
-                  href="#contact"
-                  className="text-gray-700 hover:text-primary transition font-medium"
-                >
-                  Contact
                 </Link>
                 <a
                   href="tel:+19857099200"
