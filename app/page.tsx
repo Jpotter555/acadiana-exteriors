@@ -139,12 +139,6 @@ export default function HomePage() {
                 Driveways, patios, sidewalks, siding, decks - you name it.
                 We blast away all that Louisiana dirt, mold, and grime that builds up.
               </p>
-              <Link
-                href="/services/pressure-washing"
-                className="text-primary font-semibold hover:underline"
-              >
-                Learn More →
-              </Link>
             </div>
 
             {/* Service Card 2 */}
@@ -171,12 +165,6 @@ export default function HomePage() {
                 Streak-free windows for homes and businesses. Inside, outside,
                 screens too. Makes a bigger difference than you&apos;d think.
               </p>
-              <Link
-                href="/services/window-cleaning"
-                className="text-secondary font-semibold hover:underline"
-              >
-                Learn More →
-              </Link>
             </div>
 
             {/* Service Card 3 */}
@@ -203,12 +191,6 @@ export default function HomePage() {
                 With all the rain we get? Your gutters need this. We clean out
                 the leaves, moss, and whatever else ends up in there.
               </p>
-              <Link
-                href="/services/gutter-services"
-                className="text-primary font-semibold hover:underline"
-              >
-                Learn More →
-              </Link>
             </div>
 
             {/* Service Card 4 */}
@@ -235,12 +217,6 @@ export default function HomePage() {
                 Trash cans get nasty quick in Louisiana heat. We&apos;ll pressure wash
                 and sanitize your bins so they don&apos;t smell up your property.
               </p>
-              <Link
-                href="/services/can-cleaning"
-                className="text-secondary font-semibold hover:underline"
-              >
-                Learn More →
-              </Link>
             </div>
           </div>
         </div>
