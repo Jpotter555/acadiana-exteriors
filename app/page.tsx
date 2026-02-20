@@ -74,9 +74,9 @@ export default function HomePage() {
                 <span className="text-3xl md:text-4xl text-secondary">Right Here in Acadiana</span>
               </h1>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                Brandon and Jonathan here - we&apos;re starting this business to serve
+                Professional exterior cleaning for homes and businesses across
                 Lafayette, Breaux Bridge, and all of Acadiana. Pressure washing, windows,
-                gutters. Fair prices and we&apos;ll treat your place right.
+                gutters, and more — done right at a fair price.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <Link
@@ -110,12 +110,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              What We Do
+              Here&apos;s What We Offer
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We&apos;re Brandon and Jonathan, launching this business right here in Acadiana.
-              Here&apos;s what we offer:
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
