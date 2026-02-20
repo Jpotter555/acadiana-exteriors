@@ -299,7 +299,7 @@ export default function HomePage() {
                   <span className="text-primary font-bold text-sm">JC</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Jake Chauvin</p>
+                  <p className="font-semibold text-gray-900">Jake C.</p>
                   <p className="text-sm text-gray-500">Google Review</p>
                 </div>
               </div>
