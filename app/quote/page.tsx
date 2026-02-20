@@ -14,7 +14,7 @@ const quoteSchema = z.object({
   // Property Details
   propertyType: z.enum(["residential", "commercial"]),
   propertyAddress: z.string().optional(),
-  propertySize: z.string().optional(),
+  propertySize: z.string().min(1, "Please enter an approximate property size"),
 
   // Contact Information
   fullName: z.string().min(2, "Please enter your full name"),
@@ -61,7 +61,7 @@ export default function QuotePage() {
     let fieldsToValidate: (keyof QuoteFormData)[] = [];
 
     if (step === 1) fieldsToValidate = ["services"];
-    if (step === 2) fieldsToValidate = ["propertyType"];
+    if (step === 2) fieldsToValidate = ["propertyType", "propertySize"];
     if (step === 3) fieldsToValidate = ["fullName", "email", "phone"];
 
     const isValid = await trigger(fieldsToValidate);
@@ -288,7 +288,7 @@ export default function QuotePage() {
 
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Approximate Property Size (optional)
+                      Approximate Property Size *
                     </label>
                     <input
                       type="text"
@@ -296,6 +296,11 @@ export default function QuotePage() {
                       placeholder="e.g., 2000 sq ft, 1 acre"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900 placeholder:text-gray-500"
                     />
+                    {errors.propertySize && (
+                      <p className="mt-1 text-sm text-red-600">
+                        {errors.propertySize.message}
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
