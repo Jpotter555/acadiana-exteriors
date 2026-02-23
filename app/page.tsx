@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import MobileNav from "@/components/MobileNav";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 export default function HomePage() {
   return (
@@ -81,16 +82,30 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <Link
                   href="/quote"
-                  className="bg-primary text-white px-10 py-5 rounded-lg text-lg font-bold hover:bg-primary-700 transition shadow-xl transform hover:scale-105"
+                  className="bg-primary text-white px-10 py-5 rounded-lg text-lg font-bold hover:bg-primary-700 transition shadow-xl transform hover:scale-105 text-center"
                 >
-                  Get Your Quote
+                  Get a Free Quote
                 </Link>
-                <Link
-                  href="#services"
-                  className="bg-secondary text-white px-10 py-5 rounded-lg text-lg font-bold hover:bg-secondary-700 transition shadow-xl"
+                <a
+                  href="tel:+19857099200"
+                  className="bg-secondary text-white px-10 py-5 rounded-lg text-lg font-bold hover:bg-secondary-700 transition shadow-xl text-center"
                 >
-                  What We Do
-                </Link>
+                  Call Now
+                </a>
+              </div>
+              <div className="flex items-center gap-6 mt-6 justify-center md:justify-start text-sm text-gray-500">
+                <span className="flex items-center gap-1">
+                  <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/></svg>
+                  Free Estimates
+                </span>
+                <span className="flex items-center gap-1">
+                  <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/></svg>
+                  No Obligation
+                </span>
+                <span className="flex items-center gap-1">
+                  <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/></svg>
+                  Fast Response
+                </span>
               </div>
             </div>
             <div className="relative h-[400px] md:h-[500px]">
@@ -411,7 +426,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-gray-900 text-white py-12 pb-24 md:pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
@@ -486,6 +501,9 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
+
+      {/* Sticky Mobile CTA */}
+      <StickyMobileCTA />
     </div>
   );
 }
