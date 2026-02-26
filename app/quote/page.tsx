@@ -29,8 +29,8 @@ const quoteSchema = z.object({
 type QuoteFormData = z.infer<typeof quoteSchema>;
 
 const services = [
-  { id: "pressure-washing", label: "Pressure Washing", description: "Driveways, siding, decks, patios" },
-  { id: "window-cleaning", label: "Window Cleaning", description: "Interior and exterior windows" },
+  { id: "pressure-washing", label: "Pressure Washing", description: "Driveways, sidewalks, decks, patios" },
+  { id: "soft-washing", label: "Soft Washing", description: "Home siding and delicate surfaces" },
   { id: "gutter-cleaning", label: "Gutter Cleaning", description: "Cleaning and maintenance" },
   { id: "can-cleaning", label: "Can Cleaning", description: "Trash can washing and sanitizing" },
 ];

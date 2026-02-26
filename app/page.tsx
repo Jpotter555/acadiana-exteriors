@@ -76,7 +76,7 @@ export default function HomePage() {
               </h1>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
                 Professional exterior cleaning for homes and businesses across
-                Lafayette, Breaux Bridge, and all of Acadiana. Pressure washing, windows,
+                Lafayette, Breaux Bridge, and all of Acadiana. Pressure washing, soft washing,
                 gutters, and more — done right at a fair price.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -146,7 +146,7 @@ export default function HomePage() {
                 Pressure Washing
               </h3>
               <p className="text-gray-600 mb-4">
-                Driveways, patios, sidewalks, siding, decks - you name it.
+                Driveways, patios, sidewalks, decks — you name it.
                 We blast away all that Louisiana dirt, mold, and grime that builds up.
               </p>
             </div>
@@ -164,16 +164,17 @@ export default function HomePage() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                   />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                Window Cleaning
+                Soft Washing
               </h3>
               <p className="text-gray-600 mb-4">
-                Streak-free windows for homes and businesses. Inside, outside,
-                screens too. Makes a bigger difference than you&apos;d think.
+                A gentle, low-pressure cleaning method that uses professional-grade
+                solutions to kill mold, mildew, and algae on your home&apos;s siding
+                and delicate surfaces — without the risk of high-pressure damage.
               </p>
             </div>
 
@@ -366,9 +367,14 @@ export default function HomePage() {
                   "You can fill out our online quote form anytime 24/7, call us at (985) 709-9200, or send us a message on Facebook or Instagram. We typically respond within 24 hours.",
               },
               {
+                question: "What is soft washing and how is it different from pressure washing?",
+                answer:
+                  "Soft washing is a low-pressure cleaning method that uses professional-grade biodegradable solutions to kill mold, mildew, algae, and bacteria at the source. Unlike pressure washing, which uses high-pressure water (1,300+ PSI) for hard surfaces like concrete, soft washing operates at only 150–300 PSI and lets the cleaning solution do the work. This makes it safe for your home's siding, painted surfaces, and other delicate areas where high pressure could cause damage. Because it kills organic growth at the root, results last much longer too.",
+              },
+              {
                 question: "Will pressure washing damage my property?",
                 answer:
-                  "Not when it's done right. We adjust the pressure and technique based on the surface — concrete driveways can handle high pressure, while siding and wood get a gentler soft wash. We know what we're doing and treat your property with care.",
+                  "Not when it's done right. We use pressure washing only on hard surfaces like concrete driveways, sidewalks, and patios. For your home's siding and other delicate surfaces, we use a soft wash — a gentle, low-pressure method with cleaning solutions that safely remove grime without any risk of damage.",
               },
               {
                 question: "How often should I get my house or driveway pressure washed?",
@@ -383,7 +389,7 @@ export default function HomePage() {
               {
                 question: "What services do you offer?",
                 answer:
-                  "We offer pressure washing, window cleaning, gutter cleaning, and trash can cleaning. Whether it's your driveway, patio, siding, sidewalks, or the whole exterior — we've got you covered.",
+                  "We offer pressure washing, soft washing, gutter cleaning, and trash can cleaning. Pressure washing handles hard surfaces like driveways, patios, and sidewalks. Soft washing takes care of your home's siding and delicate surfaces using gentle, low-pressure cleaning solutions. We've got your whole exterior covered.",
               },
               {
                 question: "How long does a typical job take?",
@@ -433,7 +439,7 @@ export default function HomePage() {
                 className="h-10 w-auto mb-4"
               />
               <p className="text-gray-400">
-                Pressure washing, window cleaning, gutter services, and can cleaning
+                Pressure washing, soft washing, gutter services, and can cleaning
                 throughout Acadiana. Based right here in Louisiana.
               </p>
             </div>
