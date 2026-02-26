@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import BeforeAfterSlider from "@/components/BeforeAfterSlider";
+import HeroSlideshow from "@/components/HeroSlideshow";
 import MobileNav from "@/components/MobileNav";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 
@@ -109,12 +109,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="relative h-[400px] md:h-[500px]">
-              <BeforeAfterSlider
-                beforeImage="/images/before-driveway.jpg"
-                afterImage="/images/after-driveway.jpg"
-                beforeAlt="Dirty driveway before pressure washing"
-                afterAlt="Clean driveway after pressure washing"
-              />
+              <HeroSlideshow />
             </div>
           </div>
         </div>
