@@ -67,7 +67,7 @@ export default function HeroSlideshow() {
             priority={index === 0}
           />
           {/* Watermark */}
-          <div className="absolute bottom-16 right-3 opacity-40 pointer-events-none">
+          <div className="absolute bottom-16 right-3 pointer-events-none">
             <Image
               src="/images/logo-symbol.svg"
               alt=""

@@ -297,15 +297,15 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                &ldquo;Had them clean our gutters and wash the house siding. The difference is night and day. These guys really care about doing a good job. Already recommended them to my neighbors.&rdquo;
+                &ldquo;Acadiana Exteriors came through and completely transformed our home! The house and driveway look so clean it honestly feels like we just moved in again. Every inch is spotless — they didn&apos;t miss a thing! Super professional, showed up on time, and the results speak for themselves. 10/10 RECOMMEND!&rdquo;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-secondary/20 rounded-full flex items-center justify-center">
-                  <span className="text-secondary-700 font-bold text-sm">TD</span>
+                  <span className="text-secondary-700 font-bold text-sm">RN</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Travis D.</p>
-                  <p className="text-sm text-gray-500">Breaux Bridge, LA</p>
+                  <p className="font-semibold text-gray-900">Raven N.</p>
+                  <p className="text-sm text-gray-500">Facebook Review</p>
                 </div>
               </div>
             </div>
@@ -320,15 +320,15 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                &ldquo;I called for a quote and they got back to me the same day. Price was right, and the work was excellent. My patio and sidewalks haven&apos;t looked this clean since we moved in. Highly recommend!&rdquo;
+                &ldquo;They made a huge difference on my driveway and sidewalk. The vinyl in the back of my house had huge spots all over and they made it look good as new. Super friendly too.&rdquo;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center">
-                  <span className="text-accent font-bold text-sm">SR</span>
+                  <span className="text-accent font-bold text-sm">CH</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Sarah R.</p>
-                  <p className="text-sm text-gray-500">Youngsville, LA</p>
+                  <p className="font-semibold text-gray-900">Charlotte H.</p>
+                  <p className="text-sm text-gray-500">Facebook Review</p>
                 </div>
               </div>
             </div>
