@@ -116,6 +116,13 @@ export default function QuotePage() {
       const result = await response.json();
       console.log("Quote submitted successfully:", result);
 
+      // Fire Google Ads conversion event
+      if (typeof window !== "undefined" && typeof window.gtag === "function") {
+        window.gtag("event", "conversion", {
+          send_to: "AW-17948695015/95P7CLvFo_4bEOezze5C",
+        });
+      }
+
       setIsSuccess(true);
     } catch (error) {
       console.error("Error submitting quote:", error);
